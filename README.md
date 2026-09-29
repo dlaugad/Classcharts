@@ -52,7 +52,7 @@ This integration supports a dynamic **Options Flow**. You can adjust how the int
 
 | Option | Default | Description |
 | :--- | :--- | :--- |
-| **Refresh Interval** | `24` | How often (in hours) the integration updates data from Class Charts. |
+| **Refresh Interval** | `24` | How often (in minutes) the integration updates data from Class Charts. |
 | **Days to Fetch** | `14` | How many days into the future to look for events/homework. |
 | **Show Completed Homework** | `True` | Toggle to show/hide homework assignments marked as "Completed" in Class Charts. |
 | **Show "No School** | `True` | Toggle to inject placeholder events on empty weekend days and holiday slots. |
