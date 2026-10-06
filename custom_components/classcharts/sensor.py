@@ -81,6 +81,9 @@ class CCHomeworkSensor(CoordinatorEntity, SensorEntity):
                 "due_date": due_iso,           # YYYY-MM-DD for your Jinja math
                 "due_date_formatted": due_disp,     # DD/MM/YYYY for display
                 "description_snippet": description_snippet,
+                "status": item.get("status", {}),
+                "ticked": item.get("status", {}).get("ticked"),
+                "completed": item.get("status", {}).get("ticked") == "yes",
             })
 
         return {"homework_list": cleaned_list}
